@@ -1,18 +1,11 @@
 const checkForSpam = function (message) {
-  // твой код
-  // const spam = /[SPAM]/gi;
-  // const sale = /[SALE]/gi;
-  // const saleSpam = message.match(spam, sale);
-  // Решение супер, так как охватывает все регистры)))
 
-  const words = message.split(" ");
-  for (let i = 0; i < words.length; i++) {
-    words[i].toLowerCase().includes("spam") ||
-    words[i].toLowerCase().includes("sale")
-      ? console.log("true")
-      : console.log("false");
-  }
+  message.toLowerCase().includes("spam") ||
+  message.toLowerCase().includes("sale")
+    ? console.log("true")
+    : console.log("false");
   return message;
+
 };
 
 /*
@@ -27,3 +20,17 @@ console.log(checkForSpam("JavaScript weekly newsletter")); // false
 console.log(checkForSpam("Get best sale offers now!")); // true
 
 console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
+
+// const spam = /[SPAM]/gi;
+// const sale = /[SALE]/gi;
+// const saleSpam = message.match(spam, sale);
+// Решение супер, так как охватывает все регистры)))
+
+//2 ВАРИАНТ
+// const words = message.split(" ");
+// for (let i = 0; i < words.length; i++) {
+//   words[i].toLowerCase().includes("spam") ||
+//   words[i].toLowerCase().includes("sale")
+//     ? console.log("true")
+//     : console.log("false");
+// }

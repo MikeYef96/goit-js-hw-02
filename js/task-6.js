@@ -10,7 +10,6 @@ while (input !== null) {
       total += num;
     }
     alert(`Total sum of numbers in ARRAY is ${total}`);
-    break;
   }
 
   let num = Number(input);
